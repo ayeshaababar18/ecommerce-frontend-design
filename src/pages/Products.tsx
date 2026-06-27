@@ -533,6 +533,12 @@ export default function Products({ onSelectProduct, selectedCategory, setSelecte
                       <h3 className="text-[#505050] text-base font-normal line-clamp-2 leading-relaxed group-hover:text-[#0D6EFD] transition-colors mb-2">
                         {prod.title}
                       </h3>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); onSelectProduct(prod); }} 
+                        className="w-full mt-1 bg-white border border-[#E3E8EE] text-[#0D6EFD] hover:bg-[#0D6EFD] hover:text-white font-semibold py-1.5 rounded-md transition-colors text-sm"
+                      >
+                        Buy Now
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -589,9 +595,15 @@ export default function Products({ onSelectProduct, selectedCategory, setSelecte
                         {prod.description}
                       </p>
                       
-                      <span className="text-[#0D6EFD] group-hover:underline text-sm font-medium">
+                      <span className="text-[#0D6EFD] group-hover:underline text-sm font-medium block mb-3">
                         View details
                       </span>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); onSelectProduct(prod); }} 
+                        className="w-32 bg-white border border-[#E3E8EE] text-[#0D6EFD] hover:bg-[#0D6EFD] hover:text-white font-semibold py-1.5 rounded-md transition-colors text-sm"
+                      >
+                        Buy Now
+                      </button>
                     </div>
                   </div>
                   
