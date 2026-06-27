@@ -1,0 +1,8 @@
+{
+  "name": "Brand eCommerce",
+  "description": "A pixel-perfect, highly polished desktop eCommerce application implementing Home, Product Listing, Product Details, and Cart views.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
